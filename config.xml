@@ -69,17 +69,20 @@
     -->
   <!-- Define app icon for each platform. -->
   <icon src="icon.png" />
-  <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
-  <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
-  <icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
-  <icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+
+
+  
+  <icon src="res/icon/android/android-icon-36x36.png" gap:platform="android" gap:qualifier="ldpi" />
+  <icon src="res/icon/android/android-icon-48x48.png" gap:platform="android" gap:qualifier="mdpi" />
+  <icon src="res/icon/android/android-icon-72x72.png" gap:platform="android" gap:qualifier="hdpi" />
+  <icon src="res/icon/android/android-icon-96x96.png" gap:platform="android" gap:qualifier="xhdpi" />
   <icon src="res/icon/blackberry/icon-80.png" gap:platform="blackberry" />
   <icon src="res/icon/blackberry/icon-80.png" gap:platform="blackberry" gap:state="hover" />
   <icon src="res/icon/ios/icon-57.png" gap:platform="ios" width="57" height="57" />
   <icon src="res/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
   <icon src="res/icon/ios/icon-57-2x.png" gap:platform="ios" width="114" height="114" />
   <icon src="res/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144" />
-  <icon src="res/icon/webos/icon-64.png" gap:platform="webos" />
+  
   <icon src="res/icon/windows-phone/icon-48.png" gap:platform="winphone" />
   <icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone" gap:role="background" />
   <!-- Define app splash screen for each platform. -->
@@ -102,7 +105,6 @@
 
         <access />            - a blank access tag denies access to all external resources.
         <access origin="*" /> - a wildcard access tag allows access to all external resource.
-a
         Otherwise, you can specify specific domains:
 
         <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/
@@ -128,4 +130,5 @@ a
   </platform>
   <vs:plugin name="cordova-plugin-ms-adal" />
   <vs:plugin name="cordova-plugin-ms-files" version="0.6.0" src="https://github.com/OfficeDev/cordova-plugin-ms-files" />
+    <preference name="android-minSdkVersion" value="14" />
 </widget>
